@@ -108,7 +108,7 @@ export function App() {
           onRestart={handleRestartGame}
         />
 
-        <Tip tip={challenge.tip} />
+        <Tip category={challenge.category} tip={challenge.tip} />
 
         <div className={styles.word}>
           {challenge.word.split("").map((letter, index) => {
